@@ -20,7 +20,7 @@ myCache = DiskCache()
 starttime = datetime.datetime.now()
 # cache.link_crawler.link_crawler(seed_url='http://example.webscraping.com/', link_regex='/(index|view)',
 #                                 cache=DiskCache())
-cache.link_crawler.link_crawler('http://example.webscraping.com/', '/(index|view)', max_depth=3, cache=DiskCache())
+cache.link_crawler.link_crawler('http://example.webscraping.com/', '/(index|view)', max_depth=2, cache=DiskCache())
 endtime = datetime.datetime.now()
 print('时长为' + str((endtime - starttime)))
 
