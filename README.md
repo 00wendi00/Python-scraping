@@ -32,3 +32,16 @@ Downloader          为链接爬虫添加缓存支持 -- 存入磁盘文件
 link_crawler文件    Crawl from the given seed URL following links matched by link_regex
 
 test
+
+
+-------------------- mongoDB --------------------
+
+MongoCache          基于MongoDB的缓存 . 压缩解压, 索引
+
+test1               -- mongodb, python CRUD , 排序, 多级元素操作
+
+test2               -- mongodb, python 多级元素操作, 查询修改.
+
+test3               测试 MongoCache
+
+test4               抓取网页, 存入MongoDB中
