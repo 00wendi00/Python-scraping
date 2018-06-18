@@ -13,9 +13,9 @@ from base.Throttle import Throttle
 import socket
 
 DEFAULT_AGENT = 'wswp'
-DEFAULT_DELAY = 1
+DEFAULT_DELAY = 0.3
 DEFAULT_RETRIES = 1
-DEFAULT_TIMEOUT = 3
+DEFAULT_TIMEOUT = 0.8
 
 
 class Downloader:
@@ -73,7 +73,7 @@ class Downloader:
                 code = e.code
                 if num_retries > 0 and 500 <= code < 600:
                     # retry 5xx http errors
-                    return self._get(self, url, headers, proxy, num_retries - 1, data)
+                    return self.download(url, headers, proxy, num_retries - 1, data)
             else:
                 code = None
         return {'html': html, 'code': code}
