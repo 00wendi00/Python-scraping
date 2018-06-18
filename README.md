@@ -45,3 +45,14 @@ test2               -- mongodb, python 多级元素操作, 查询修改.
 test3               测试 MongoCache
 
 test4               抓取网页, 存入MongoDB中
+
+
+-------------------- multi_thread --------------------
+
+AlexaCallback       回调类 : 读取CSV文件.  下载读取zip文件
+
+link_crawler        串行下载500个页面, 缓存至MongoDB中
+
+test1               测试 link_crawler -- 串行下载500个页面, 缓存至MongoDB中
+
+thread_test         1.多线程下载网页, threading  2.循环创建线程  3.队列的基本操作 -- 线程安全.
