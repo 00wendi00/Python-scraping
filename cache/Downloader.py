@@ -3,7 +3,7 @@
 # @File  : Downloader.py
 # @Author: Wade Cheung
 # @Date  : 2018/6/17
-# @Desc  : 为链接爬虫添加缓存支持 -- 存入磁盘文件
+# @Desc  : 为链接爬虫添加缓存支持 -- 存入磁盘文件 .   __call__类的实例当函数调用.
 
 
 import urllib.request
@@ -29,6 +29,7 @@ class Downloader:
         self.opener = opener
         self.cache = cache
 
+    # 类的实例当函数调用.
     def __call__(self, url):
         result = None
         if self.cache:
