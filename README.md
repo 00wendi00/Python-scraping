@@ -27,7 +27,7 @@ Throttle            推迟调用线程的运行 -- time.sleep()
 
 DiskCache           磁盘缓存 . 将下载的html存入磁盘文件中
 
-Downloader          为链接爬虫添加缓存支持 -- 存入磁盘文件
+Downloader          为链接爬虫添加缓存支持 -- 存入磁盘文件 .   __call__类的实例当函数调用.
 
 link_crawler文件    Crawl from the given seed URL following links matched by link_regex
 
