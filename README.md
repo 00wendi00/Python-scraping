@@ -34,7 +34,7 @@ link_crawler文件    Crawl from the given seed URL following links matched by l
 test
 
 
--------------------- mongoDB --------------------
+-------------------- mongo --------------------
 
 MongoCache          基于MongoDB的缓存 . 压缩解压, 索引
 
@@ -45,6 +45,15 @@ test2               -- mongodb, python 多级元素操作, 查询修改.
 test3               测试 MongoCache
 
 test4               抓取网页, 存入MongoDB中
+
+
+-------------------- mongo_queue --------------------
+
+MongoQueue          基于 MongoDB 实现的队列 . 定义了执行过程中的三种状态 : OUTSTANDING, PROCESSING, COMPLETE
+
+process_test        测试process_crawler , 8进程
+
+thread_test         1. 启动多进程, multiprocessing   2. 多线程下载网页 threading   3. 使用MongoDB -- 线程安全
 
 
 -------------------- multi_thread --------------------
