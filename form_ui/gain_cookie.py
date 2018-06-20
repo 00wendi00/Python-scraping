@@ -15,6 +15,9 @@ import win32crypt
 from http.cookiejar import CookieJar
 from http.cookiejar import Cookie
 
+COOKIE_PATH = 'C:\\Users\\wendi\\AppData\\Local\\Google\\Chrome\\User Data\\Default\\Cookies'
+URL_HOME = 'http://example.webscraping.com'
+
 
 def load_ff_sessions(session_filename):
     """使用sqlite3解析Chrome的cookie文件到CookieJar中"""
@@ -54,12 +57,14 @@ def load_ff_sessions(session_filename):
     return cj
 
 
-COOKIE_PATH = 'C:\\Users\\wendi\\AppData\\Local\\Google\\Chrome\\User Data\\Default\\Cookies'
-URL_HOME = 'http://example.webscraping.com'
+def do_it():
+    # 在Chrome中登录之后, 执行代码最终返回 Welcome wade . 不登录的情况下返回Login In
+    cj_home = load_ff_sessions(COOKIE_PATH)
+    opener_home = urllib.request.build_opener(urllib.request.HTTPCookieProcessor(cj_home))
+    html_re = opener_home.open(URL_HOME).read()
+    tree = lxml.html.fromstring(html_re.decode())
+    print(tree.cssselect('ul#navbar li a')[0].text_content())
 
-# 在Chrome中登录之后, 执行代码最终返回 Welcome wade . 不登录的情况下返回Login In
-cj_home = load_ff_sessions(COOKIE_PATH)
-opener_home = urllib.request.build_opener(urllib.request.HTTPCookieProcessor(cj_home))
-html_re = opener_home.open(URL_HOME).read()
-tree = lxml.html.fromstring(html_re.decode())
-print(tree.cssselect('ul#navbar li a')[0].text_content())
+
+if __name__ == '__main__':
+    do_it()
