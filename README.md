@@ -34,6 +34,15 @@ link_crawler文件    Crawl from the given seed URL following links matched by l
 test
 
 
+-------------------- dynamic --------------------
+
+countries.txt
+
+test1               对Ajax接口的爬取. 存入countries.txt文件中.
+
+此模块缺少 --  渲染动态网页. PySide, Selenium
+
+
 -------------------- mongo --------------------
 
 MongoCache          基于MongoDB的缓存 . 压缩解压, 索引
