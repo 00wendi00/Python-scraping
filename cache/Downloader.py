@@ -15,7 +15,7 @@ import socket
 DEFAULT_AGENT = 'wswp'
 DEFAULT_DELAY = 0.3
 DEFAULT_RETRIES = 1
-DEFAULT_TIMEOUT = 0.8
+DEFAULT_TIMEOUT = 5
 
 
 class Downloader:
