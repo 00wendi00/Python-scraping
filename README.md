@@ -43,6 +43,13 @@ test1               对Ajax接口的爬取. 存入countries.txt文件中.
 此模块缺少 --  渲染动态网页. PySide, Selenium
 
 
+-------------------- form_ui --------------------
+
+submit_post         提交表单 :  获取表单, 添加cookie支持, 填表单, 提交, 返回Response.
+
+gain_cookie         提交表单 :  获取表单, 添加cookie支持, 填表单, 提交, 返回Response.
+
+
 -------------------- mongo --------------------
 
 MongoCache          基于MongoDB的缓存 . 压缩解压, 索引
