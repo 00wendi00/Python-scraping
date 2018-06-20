@@ -45,9 +45,13 @@ test1               对Ajax接口的爬取. 存入countries.txt文件中.
 
 -------------------- form_ui --------------------
 
-submit_post         提交表单 :  获取表单, 添加cookie支持, 填表单, 提交, 返回Response.
+edit                提交表单 -- 编辑国家人口.
 
 gain_cookie         提交表单 :  获取表单, 添加cookie支持, 填表单, 提交, 返回Response.
+
+submit_post         提交表单 :  获取表单, 添加cookie支持, 填表单, 提交, 返回Response.
+
+test_mechanize      提交表单 :  login page + edit page . 使用mechanical模块, 在3.x版本中, 为mechanicalsoup模块, 详见https://piratefache.ch/python-3-mechanize-and-beautifulsoup/
 
 
 -------------------- mongo --------------------
