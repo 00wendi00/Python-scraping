@@ -34,6 +34,11 @@ link_crawler文件    Crawl from the given seed URL following links matched by l
 test
 
 
+-------------------- captcha --------------------
+
+test_register       在注册页面中 . 1.抓取注册页面中的图片, 使用Base64解码图像数据--> 二进制   2.将图片转换为黑白, 将图片阈值化, 保存图片, image_to_string, 限定字符集, 返回名称和识别的字符   3.tesseract-ocr需要下载安装,设环境变量:参考pytesseract书签 .
+
+
 -------------------- dynamic --------------------
 
 countries.txt
