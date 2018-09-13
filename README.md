@@ -2,7 +2,7 @@
 Basic knowledge of Scraping
 
 
-根据<用python写网络爬虫>一书,  对网络爬虫相关知识的练习.
+根据<用python写网络爬虫>一书,  网络爬虫.
 环境:win10 , python3.5.2
 
 
